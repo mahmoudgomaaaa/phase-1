@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+body {
+    background-color: rgb(5, 0, 0);
+    color: #f11343;
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #0296e6;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0em;
+    margin: 0em;
+}
+
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+    vertical-align: middle;
+    color: rgb(255, 0, 0);
+    padding: 0 0.25em;
+}
+.mainphoto{
+    text-align:start;
+    text-align: right;
+    display: inline;
+    font-size: 180px;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+    vertical-align: middle;
+    color: rgb(255, 0, 0);
+    padding: 0 0.25em;
+}
+
+.nav img {
+    width: 150px;
+    height: 150px;
+}
+
+.nav a:link {
+    text-decoration: none;
+    color: #f11343;
+}
+
+.nav a:visited {
+    text-decoration: none;
+    color: #f11343;
+}
+
+.nav a:hover {
+    color: #fd0000;
+    transition: 0.3s;
+}
+
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: url(Banner.jpg);
+    margin-bottom: 150px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.about-us {
+    text-align: center;
+    margin-bottom: 150px;
+    padding: 0 6em;
+    font-size: 16px;
+}
+
+.solid {
+    border: none;
+    height: 2px;
+    background-color: rgb(243, 238, 226);
+    width: 15%;
+    margin: 2em auto;
+}
+
+.menu {
+    width: 100%;
+    margin-bottom: 120px;
+    font-size: 16px;
+}
+
+.menu h3 {
+    padding-left: 6em;
+}
+
+.menu-heading {
+    text-align: center;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding-bottom: 3em;
+    text-align: left;
+    padding-left: 7em;
+    padding-right: 3em;
+}
+
+.menu-item {
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.location {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hours {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact-section {
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+    font-size: 16px;
+}
+
+
+.about-text {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gallery {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.gallery-images {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-images img {
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.gallery-images img:hover {
+    transition: 0.4s ease;
+    transform: scale(1.5);
+}
+
+.signup-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+form {
+    display: block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: -2em;
+    width: 200px;
+    height: 200px;
+}
+
+.submit-button {
+    background-color: #ff07d1dc;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #ff005d;
+}
+
+@media screen and (min-width: 992px) {
+    .nav li {
+        padding: 0 2em;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .signup-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-us {
+        font-size: 18px;
+    }
+
+    .menu {
+        font-size: 18px;
+    }
+
+    .contact-section {
+        font-size: 18px;
+    }
+
+    .gallery {
+        font-size: 18px;
+    }
+
+    .signup-form {
+        font-size: 18px;
+    }
+}
